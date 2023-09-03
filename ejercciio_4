@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class SumaPrimerosNNumeros {
+
+    public static void main(String[] args) {
+
+        // Solicitar al usuario la cantidad a alcanzar
+        System.out.println("Ingrese la cantidad a alcanzar: ");
+        Scanner sc = new Scanner(System.in);
+        int cantidad = sc.nextInt();
+
+        // Iniciar el número natural N en 1
+        int n = 1;
+
+        // Inicializar la suma de los primeros N números
+        int suma = 0;
+
+        // Repetir mientras la suma de los primeros N números sea menor que la cantidad
+        while (suma < cantidad) {
+
+            // Agregar el número N a la suma
+            suma += n;
+
+            // Incrementar N
+            n++;
+        }
+
+        // Imprimir el valor de N
+        System.out.println("El número natural N más pequeño es: " + n);
+    }
+}
