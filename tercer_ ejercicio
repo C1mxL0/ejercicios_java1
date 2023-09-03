@@ -1,0 +1,20 @@
+public class SumaSerieGeometrica {
+
+    public static void main(String[] args) {
+
+        // Solicitar al usuario el número de términos de la serie
+        System.out.println("Ingrese el número de términos de la serie: ");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        // Calcular la suma de la serie
+        double suma = sumaSerieGeometrica(n);
+
+        // Imprimir la suma de la serie
+        System.out.println("La suma de la serie es: " + suma);
+    }
+
+    public static double sumaSerieGeometrica(int n) {
+        return 1 - 1 / Math.pow(2, n);
+    }
+}
